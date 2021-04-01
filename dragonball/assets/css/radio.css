@@ -1,0 +1,47 @@
+input[type="radio"] {
+  content: url('../../assets/img/uncheck.png');
+  height: 16px;
+  width: 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position:relative;
+  top:10px;
+  height:30px;
+  width:30px;
+   outline: none;
+}
+input:checked {
+  content: url('../../assets/img/check.png');
+}
+input:focus {
+    outline:none !important;
+}	
+input[type="radio"] + label {
+	
+	display:inline-block;
+	cursor:pointer;
+	padding:5px;
+	border-radius:5px;
+	color:black;	
+}	
+input[type="radio"]:hover+label{
+	background:#5cb85c;
+	border-color:#5cb85c;
+}	
+
+.radiohit:hover{
+	background:#99ff9e;
+	cursor:pointer;
+}	
+
+input[type="radio"]:checked+label{ 
+	background: darkgreen; 
+	padding:5px 10px; 
+	border-radius:5px;
+	color:white;
+}
+
+
+
+
